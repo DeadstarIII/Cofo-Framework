@@ -1,0 +1,41 @@
+import { ApplicationCommandOptions, CommandInteraction, Message } from "eris";
+import { CofoClient } from "../CofoClient";
+export declare class Command {
+    private client;
+    name: string;
+    description: string | undefined;
+    options?: ApplicationCommandOptions[] | undefined;
+    cooldown?: number | undefined;
+    guildOnly?: boolean;
+    dmOnly?: boolean;
+    guildOwneronly?: boolean;
+    botOwnerOnly?: boolean;
+    aliases?: Array<any>;
+    usage?: string;
+    argsRequired?: boolean;
+    cooldownMessage?: string;
+    deleteCommand?: boolean;
+    defaultPermission?: boolean | undefined;
+    slash?: boolean | false;
+    customPrecondition?: (message: Message) => boolean;
+    customInteractionPreCondition?: (interaction: CommandInteraction) => boolean;
+    constructor(client: CofoClient, options: {
+        name: string;
+        description?: string | undefined;
+        options?: ApplicationCommandOptions[] | undefined;
+        cooldown?: number | undefined;
+        guildOnly?: boolean | undefined;
+        dmOnly?: boolean | undefined;
+        guildOwnerOnly?: boolean | undefined;
+        botOwnerOnly?: boolean | undefined;
+        aliases?: Array<any>;
+        usage?: string;
+        argsRequired?: boolean;
+        cooldownMessage?: string;
+        deleteCommand?: boolean;
+        defaultPermission?: boolean | undefined;
+        slash?: boolean | false;
+        customPrecondition?: (message: Message) => boolean;
+        customInteractionPreCondition?: (interaction: CommandInteraction) => boolean;
+    });
+}

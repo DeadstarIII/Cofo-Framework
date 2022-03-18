@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "cofo-framework",
+  "version": "0.4.1",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs --temp .temp"
+  },
+  "devDependencies": {
+    "vuepress": "1.9.7",
+    "vuepress-theme-vt": "0.4.1"
+  },
+  "description": "Framework to build discord bots on top of Eris with ease",
+  "author": "ApiDev234<apidev234@yandex.com>",
+  "dependencies": {
+    "@discord-message-components/vue": "^0.2.1",
+    "@vuepress/client": "^2.0.0-alpha.1"
+  }
+}
